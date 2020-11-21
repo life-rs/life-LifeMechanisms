@@ -1,0 +1,10 @@
+{
+	"_id": "BigBoy_Helmet",
+	"_tpl": "BigBoy_Helmet",
+	"parentId": "hideout",
+	"slotId": "hideout",
+	"upd": {
+		"UnlimitedCount": true,
+		"StackObjectsCount": 999999
+	}
+}

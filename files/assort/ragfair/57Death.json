@@ -1,0 +1,10 @@
+{
+	"_id": "57Death",
+	"_tpl": "57Death",
+	"parentId": "hideout",
+	"slotId": "hideout",
+	"upd": {
+		"UnlimitedCount": true,
+		"StackObjectsCount": 999999999
+	}
+}

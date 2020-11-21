@@ -1,0 +1,10 @@
+{
+	"_id": "45-shortbarrel",
+	"_tpl": "45-shortbarrel",
+	"parentId": "hideout",
+	"slotId": "hideout",
+	"upd": {
+		"UnlimitedCount": true,
+		"StackObjectsCount": 999999999
+	}
+}

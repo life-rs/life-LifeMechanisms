@@ -1,0 +1,7 @@
+{
+    "Id": "Weapon-Mods",
+    "ParentId": "LifeMechs",
+    "Icon": "/files/handbook/icon_mods.png",
+    "Color": "",
+    "Order": "2"
+}

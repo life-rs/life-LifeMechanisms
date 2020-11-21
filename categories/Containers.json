@@ -1,0 +1,7 @@
+{
+    "Id": "Containers",
+    "ParentId": "LifeMechs",
+    "Icon": "/files/handbook/icon_gear_cases.png",
+    "Color": "",
+    "Order": "6"
+}

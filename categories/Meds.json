@@ -1,0 +1,7 @@
+{
+    "Id": "Meds",
+    "ParentId": "LifeMechs",
+    "Icon": "/files/handbook/icon_medical.png",
+    "Color": "",
+    "Order": "4"
+}

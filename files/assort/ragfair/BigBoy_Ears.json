@@ -1,0 +1,10 @@
+{
+	"_id": "BigBoy_Ears",
+	"_tpl": "BigBoy_Ears",
+	"parentId": "hideout",
+	"slotId": "hideout",
+	"upd": {
+		"UnlimitedCount": true,
+		"StackObjectsCount": 999999
+	}
+}

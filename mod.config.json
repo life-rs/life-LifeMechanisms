@@ -1,0 +1,51 @@
+{
+  "name": "LifeMechanisms",
+  "author": "life",
+  "description": "collection of my mods",
+  "license": "MIT",
+  "version": "1.0.1",
+  "dependencies": [],
+  "lateExecute": false,
+  "src":{
+    "LifeMechanisms": "src/modloader.js",
+    "life": "src/life.js"
+  },
+  "folders": [
+	"files/assort/ragfair",
+	"files/items",
+  "files/locales/en",
+  "files/templates"
+  ],
+  "filenames": [
+    "57Receiver",
+    "57LB",
+    "57LB-ExtMag",
+    "57LB-Mag",
+    "57-5inchBar",
+    "57-7inchBar",
+    "57-105inchBar",
+    "57-14inchBar",
+    "57Death",
+    "AMR_Receiver",
+    "AMR",
+    "AMR_ExtBar",
+    "AMR_Mag",
+    "AMR_ShortBar",
+    "AMR_StandardBar",
+    "AM_Lead",
+    "AM_Bang",
+    "BigBoy_Armor",
+    "BigBoy_Ears",
+    "BigBoy_FShield",
+    "BigBoy_Helmet",
+    "BigBoy_Rig",
+    "LifeMed",
+    "KingKappa",
+    "AR-45",
+    "45-receiver",
+    "45-barrel",
+    "45-shortbarrel",
+    "45-standard",
+    "45-drum"
+  ]
+}

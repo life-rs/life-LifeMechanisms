@@ -1,0 +1,7 @@
+{
+    "Id": "Armor",
+    "ParentId": "LifeMechs",
+    "Icon": "/files/handbook/icon_gear.png",
+    "Color": "",
+    "Order": "3"
+}

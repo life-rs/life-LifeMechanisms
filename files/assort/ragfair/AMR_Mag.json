@@ -1,0 +1,10 @@
+{
+	"_id": "AMR_Mag",
+	"_tpl": "AMR_Mag",
+	"parentId": "hideout",
+	"slotId": "hideout",
+	"upd": {
+		"UnlimitedCount": true,
+		"StackObjectsCount": 999999999
+	}
+}

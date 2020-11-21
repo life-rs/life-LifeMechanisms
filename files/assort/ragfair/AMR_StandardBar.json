@@ -1,0 +1,10 @@
+{
+	"_id": "AMR_StandardBar",
+	"_tpl": "AMR_StandardBar",
+	"parentId": "hideout",
+	"slotId": "hideout",
+	"upd": {
+		"UnlimitedCount": true,
+		"StackObjectsCount": 999999999
+	}
+}

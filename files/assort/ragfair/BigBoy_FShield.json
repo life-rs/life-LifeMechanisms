@@ -1,0 +1,10 @@
+{
+	"_id": "BigBoy_FShield",
+	"_tpl": "BigBoy_FShield",
+	"parentId": "hideout",
+	"slotId": "hideout",
+	"upd": {
+		"UnlimitedCount": true,
+		"StackObjectsCount": 999999
+	}
+}

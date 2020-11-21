@@ -1,0 +1,10 @@
+{
+	"_id": "AMR_ShortBar",
+	"_tpl": "AMR_ShortBar",
+	"parentId": "hideout",
+	"slotId": "hideout",
+	"upd": {
+		"UnlimitedCount": true,
+		"StackObjectsCount": 999999999
+	}
+}

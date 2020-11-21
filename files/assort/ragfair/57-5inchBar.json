@@ -1,0 +1,10 @@
+{
+	"_id": "57-5inchBar",
+	"_tpl": "57-5inchBar",
+	"parentId": "hideout",
+	"slotId": "hideout",
+	"upd": {
+		"UnlimitedCount": true,
+		"StackObjectsCount": 999999999
+	}
+}

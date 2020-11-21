@@ -1,0 +1,10 @@
+{
+	"_id": "45-receiver",
+	"_tpl": "45-receiver",
+	"parentId": "hideout",
+	"slotId": "hideout",
+	"upd": {
+		"UnlimitedCount": true,
+		"StackObjectsCount": 999999999
+	}
+}
