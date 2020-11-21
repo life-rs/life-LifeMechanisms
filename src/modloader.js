@@ -11,10 +11,10 @@ exports.mod = (mod_data) => {
 	let PathResolver = global.internal.path.resolve;
 	
 	// load cache files we need
-	let items = global.json.readParsed(PathResolver('user/cache/items.json'));
-	let assort_ragfair = global.json.readParsed(PathResolver('user/cache/assort_ragfair.json'));
-	let locale_en = global.json.readParsed(PathResolver('user/cache/locale_en.json'));
-	let templates = global.json.readParsed(PathResolver('user/cache/templates.json'));
+	let items = global.fileIO.readParsed(PathResolver('user/cache/items.json'));
+	let assort_ragfair = global.fileIO.readParsed(PathResolver('user/cache/assort_ragfair.json'));
+	let locale_en = global.fileIO.readParsed(PathResolver('user/cache/locale_en.json'));
+	let templates = global.fileIO.readParsed(PathResolver('user/cache/templates.json'));
 	
 	//we gonna store temporal data here;
 	let tDataBase = {};
@@ -27,7 +27,7 @@ exports.mod = (mod_data) => {
 		tDataBase[folder] = {};
 		for(let file of ModFileNames)
 		{
-			let fileData = global.json.readParsed(PathResolver(`user/mods/${ModFolderName}/${folder}/${file}.json`));
+			let fileData = global.fileIO.readParsed(PathResolver(`user/mods/${ModFolderName}/${folder}/${file}.json`));
 			
 			tDataBase[folder][file] = fileData;
 		}
@@ -61,10 +61,10 @@ exports.mod = (mod_data) => {
 		
 	//Save Processed data to back to files with compression enabled
 	// json.write(filename, data, shouldBeCompressed?);
-	json.write(PathResolver('user/cache/items.json'), items, true);
-	json.write(PathResolver('user/cache/assort_ragfair.json'), assort_ragfair, true);
-	json.write(PathResolver('user/cache/locale_en.json'), locale_en, true);
-	json.write(PathResolver('user/cache/templates.json'), templates, true);
+	fileIO.write(PathResolver('user/cache/items.json'), items, true);
+	fileIO.write(PathResolver('user/cache/assort_ragfair.json'), assort_ragfair, true);
+	fileIO.write(PathResolver('user/cache/locale_en.json'), locale_en, true);
+	fileIO.write(PathResolver('user/cache/templates.json'), templates, true);
 	
 	logger.logSuccess("[MOD] LifeMechanisms; Applied");
 }

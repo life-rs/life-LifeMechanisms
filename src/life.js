@@ -14,7 +14,7 @@ exports.mod = () => {
 
     logger.logInfo("Caching: life-LifeMechanisms");
 
-    let base = json.parse(json.read(db.user.cache.items));
+    let base = fileIO.parse(fileIO.read(db.user.cache.items));
 
     for (let file in base.data) {
         let fileData = base.data[file];
@@ -39,25 +39,5 @@ exports.mod = () => {
             mag.push("57Death");
             }
         }
-    json.write("user/cache/items.json", base);
-    /* trying to add my custom categories to the handbook
-    let PathResolver = global.internal.path.resolve;
-    let base1 = global.json.readParsed(PathResolver(`user/cache/locale_en.json`));
-    let tDataBase = {};
-
-    for (let item in tDataBase["./categories/handbook"]) {
-        let itemData = tDataBase["./categories/handbook"][item];
-        locale.en.handbook[item] = itemData;
-    }
-
-    json.write(PathResolver(`user/cache/locale_en.json`), base1);
-
-    let base2 = global.json.readParsed(PathResolver(`user/cache/templates.json`));
-
-    for( let item in tDataBase["./categories"]) {
-        let itemData = tDataBase["./categories"][item];
-        templates.data.Categories.push(itemData);
-    }
-    json.write(PathResolver(`user/cache/templates.json`), base2);
-    */
+        fileIO.write("user/cache/items.json", base);
 }
