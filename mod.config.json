@@ -4,11 +4,9 @@
   "description": "collection of my mods",
   "license": "MIT",
   "version": "1.0.1",
-  "dependencies": [],
-  "lateExecute": false,
   "src":{
-    "LifeMechanisms": "src/modloader.js",
-    "life": "src/life.js"
+    "src/modloader.js": "CacheModLoad",
+    "src/life.js": "CacheModLoad"
   },
   "folders": [
 	"files/assort/ragfair",
