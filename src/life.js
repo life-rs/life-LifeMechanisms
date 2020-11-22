@@ -6,7 +6,7 @@
 
 "use strict";
 
-exports.mod = () => {
+exports.mod = (mod_data) => {
     
     if (!serverConfig.rebuildCache) {
         return;
@@ -76,4 +76,9 @@ exports.mod = () => {
         let itemData = tDataBase["categories/traders"][item];
         trade[item] = itemData;
     }
+    fileIO.write(PathResolver('user/cache/locale_en.json'), locale_en, true);
+	fileIO.write(PathResolver('user/cache/templates.json'), templates, true);
+    fileIO.write(global.db.cachebase.traders.ragfair + "base.json", trader);
+    fileIO.write(global.db.cachebase.traders.ragfair + "categories.json", trade);
+	logger.logSuccess("[MOD] LifeMechanisms; Applied");
 }
