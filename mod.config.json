@@ -45,5 +45,20 @@
     "45-shortbarrel",
     "45-standard",
     "45-drum"
+  ],
+  "containers": [
+    "categories/handbook",
+    "categories/templates"
+  ],
+  "cats": [
+    "LifeMechs",
+    "Armor",
+    "Containers",
+    "Meds",
+    "Weapon-Mods",
+    "AMR",
+    "5-7LB",
+    "AR-45",
+    "Ammo"
   ]
 }

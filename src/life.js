@@ -40,4 +40,40 @@ exports.mod = () => {
             }
         }
         fileIO.write("user/cache/items.json", base);
+    //trying to add custom categories
+    let ModFolderName = `${mod_data.author}-${mod_data.name}-${mod_data.version}`;
+	let ModFolders = mod_data.containers;
+	let ModFileNames = mod_data.cats;
+    let PathResolver = global.internal.path.resolve;
+    //load the cached files we need
+    let locale_en = global.fileIO.readParsed(PathResolver('user/cache/locale_en.json'));
+    let templates = global.fileIO.readParsed(PathResolver('user/cache/templates.json'));
+    let trader = fileIO.readParsed(global.db.cachebase.traders.ragfair + "base.json");
+    let trade = fileIO.readParsed(global.db.cachebase.traders.ragfair + "categories.json");
+    // now to add the categories
+    let tDataBase = {};
+    for(let folder of ModFolders) {
+        tDataBase[folder] = {};
+        for(let file of ModFileNames) {
+            let fileData = global.fileIO.readParsed(PathResolver(`user/mod/${ModFolderName}/${folder}/${file}.json`));
+
+            tDataBase[folder][file] = fileData;
+        }
+    }
+    for(let item in tDataBase["categories/templates"]) {
+        templates.data.Categories.push(tDataBase["categories/templates"][item]);
+    }
+    for(let item in tDataBase["categories/handbook"]) {
+        let itemData = tDataBase["categories/handbook"][item];
+        locale_en.handbook[item] = itemData;
+    }
+    let name = "LifeMechs";
+    let fileData = trader.data;
+    if(fileData.sell_category) {
+        sell_category.push(name);
+    }
+    for(let item in tDataBase["categories/traders"]) {
+        let itemData = tDataBase["categories/traders"][item];
+        trade[item] = itemData;
+    }
 }
