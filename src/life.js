@@ -48,8 +48,8 @@ exports.mod = (mod_data) => {
     //load the cached files we need
     let locale_en = global.fileIO.readParsed(PathResolver('user/cache/locale_en.json'));
     let templates = global.fileIO.readParsed(PathResolver('user/cache/templates.json'));
-    let trader = fileIO.readParsed(global.db.cachebase.traders.ragfair + "base.json");
-    let trade = fileIO.readParsed(global.db.cachebase.traders.ragfair + "categories.json");
+    let trader = fileIO.readParsed(PathResolver(global.db.cacheBase.traders.ragfair + "base.json"));
+    let trade = fileIO.readParsed(PathResolver(global.db.cacheBase.traders.ragfair + "categories.json"));
     // now to add the categories
     let tDataBase = {};
     for(let folder of ModFolders) {
@@ -78,7 +78,7 @@ exports.mod = (mod_data) => {
     }
     fileIO.write(PathResolver('user/cache/locale_en.json'), locale_en, true);
 	fileIO.write(PathResolver('user/cache/templates.json'), templates, true);
-    fileIO.write(global.db.cachebase.traders.ragfair + "base.json", trader);
-    fileIO.write(global.db.cachebase.traders.ragfair + "categories.json", trade);
+    fileIO.write(PathResolver(global.db.cacheBase.traders.ragfair + "base.json", trader));
+    fileIO.write(PathResolver(global.db.cacheBase.traders.ragfair + "categories.json", trade));
 	logger.logSuccess("[MOD] LifeMechanisms; Applied");
 }
