@@ -48,7 +48,8 @@
   ],
   "containers": [
     "categories/handbook",
-    "categories/templates"
+    "categories/templates",
+    "categories/traders"
   ],
   "cats": [
     "LifeMechs",
