@@ -1,7 +1,7 @@
 {
-    "Id": "5-7LB",
+    "Id": "AR-45Parts",
     "ParentId": "Weapon-Mods",
     "Icon": "/files/handbook/icon_weapons_assaultrifles.png",
     "Color": "",
-    "Order": "2"
+    "Order": "3"
 }

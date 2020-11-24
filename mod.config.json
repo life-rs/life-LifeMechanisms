@@ -5,9 +5,9 @@
   "license": "MIT",
   "version": "1.1.1",
   "src":{
-    "src/modloader.js": "CacheModLoad",
+    "src/modloader.js": "TamperModLoad",
     "src/life.js": "CacheModLoad",
-    "src/categories.js": "TamperModLoad"
+    "src/categories.js": "CacheModLoad"
   },
   "folders": [
 	"files/assort/ragfair",
@@ -48,19 +48,18 @@
     "45-drum"
   ],
   "categ": [
-    "categories/handbook",
-    "categories/templates",
-    "categories/traders"
+    "test/handbook",
+    "test/templates"
   ],
   "things": [
     "LifeMechs",
-    "Armor",
+    "BigBoyArmor",
     "Containers",
-    "Meds",
+    "LifeMeds",
     "Weapon-Mods",
-    "AMR",
-    "5-7LB",
-    "AR-45",
-    "Ammo"
+    "AMRParts",
+    "5-7LBParts",
+    "AR-45Parts",
+    "CustomAmmo"
   ]
 }

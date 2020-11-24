@@ -1,7 +1,7 @@
 {
-    "Id": "AR-45",
+    "Id": "AMRParts",
     "ParentId": "Weapon-Mods",
     "Icon": "/files/handbook/icon_weapons_assaultrifles.png",
     "Color": "",
-    "Order": "3"
+    "Order": "1"
 }

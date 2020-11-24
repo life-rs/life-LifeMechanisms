@@ -31,9 +31,9 @@ exports.mod = (mod_data) => {
         }
     }
     // process "files/locales/en"
-    for(let item in tDataBase["test/locales/en"])
+    for(let item in tDataBase["test/handbook"])
     {
-        let itemData = tDataBase["test/locales/en"][item];
+        let itemData = tDataBase["test/handbook"][item];
         locale_en.handbook[item] = itemData;
     }
         // process "files/templates"
@@ -42,6 +42,7 @@ exports.mod = (mod_data) => {
         let itemData = tDataBase["test/templates"][item];
         templates.data.Categories.push(itemData);
     }
+    
     fileIO.write(PathResolver('user/cache/locale_en.json'), locale_en, true);
     fileIO.write(PathResolver('user/cache/templates.json'), templates, true);
     logger.logSuccess("[MOD] LifeMechanisms; Applied");
