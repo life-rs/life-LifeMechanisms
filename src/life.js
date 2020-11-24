@@ -6,7 +6,7 @@
 
 "use strict";
 
-exports.mod = (mod_data) => {
+exports.mod = () => {
     
     if (!serverConfig.rebuildCache) {
         return;
@@ -40,45 +40,5 @@ exports.mod = (mod_data) => {
             }
         }
         fileIO.write("user/cache/items.json", base);
-    //trying to add custom categories
-    let ModFolderName = `${mod_data.author}-${mod_data.name}-${mod_data.version}`;
-	let ModFolders = mod_data.containers;
-	let ModFileNames = mod_data.cats;
-    let PathResolver = global.internal.path.resolve;
-    //load the cached files we need
-    let locale_en = global.fileIO.readParsed(PathResolver('user/cache/locale_en.json'));
-    let templates = global.fileIO.readParsed(PathResolver('user/cache/templates.json'));
-    let trader = fileIO.readParsed(PathResolver(global.db.cacheBase.traders.ragfair + "base.json"));
-    let trade = fileIO.readParsed(PathResolver(global.db.cacheBase.traders.ragfair + "categories.json"));
-    // now to add the categories
-    let tDataBase = {};
-    for(let folder of ModFolders) {
-        tDataBase[folder] = {};
-        for(let file of ModFileNames) {
-            let fileData = global.fileIO.readParsed(PathResolver(`user/mod/${ModFolderName}/${folder}/${file}.json`));
-
-            tDataBase[folder][file] = fileData;
-        }
-    }
-    for(let item in tDataBase["categories/templates"]) {
-        templates.data.Categories.push(tDataBase["categories/templates"][item]);
-    }
-    for(let item in tDataBase["categories/handbook"]) {
-        let itemData = tDataBase["categories/handbook"][item];
-        locale_en.handbook[item] = itemData;
-    }
-    let name = "LifeMechs";
-    let fileData = trader.data;
-    if(fileData.sell_category) {
-        sell_category.push(name);
-    }
-    for(let item in tDataBase["categories/traders"]) {
-        let itemData = tDataBase["categories/traders"][item];
-        trade[item] = itemData;
-    }
-    fileIO.write(PathResolver('user/cache/locale_en.json'), locale_en, true);
-	fileIO.write(PathResolver('user/cache/templates.json'), templates, true);
-    fileIO.write(PathResolver(global.db.cacheBase.traders.ragfair + "base.json", trader));
-    fileIO.write(PathResolver(global.db.cacheBase.traders.ragfair + "categories.json", trade));
 	logger.logSuccess("[MOD] LifeMechanisms; Applied");
 }
