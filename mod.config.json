@@ -3,10 +3,11 @@
   "author": "life",
   "description": "collection of my mods",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "src":{
     "src/modloader.js": "CacheModLoad",
-    "src/life.js": "CacheModLoad"
+    "src/life.js": "CacheModLoad",
+    "src/categories.js": "CacheModLoad"
   },
   "folders": [
 	"files/assort/ragfair",
@@ -45,5 +46,20 @@
     "45-shortbarrel",
     "45-standard",
     "45-drum"
+  ],
+  "categ": [
+    "test/handbook",
+    "test/templates"
+  ],
+  "things": [
+    "LifeMechs",
+    "BigBoyArmor",
+    "Containers",
+    "LifeMeds",
+    "Weapon-Mods",
+    "AMRParts",
+    "5-7LBParts",
+    "AR-45Parts",
+    "CustomAmmo"
   ]
 }

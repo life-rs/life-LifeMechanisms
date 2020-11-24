@@ -40,4 +40,5 @@ exports.mod = () => {
             }
         }
         fileIO.write("user/cache/items.json", base);
+	logger.logSuccess("[MOD] LifeMechanisms; Applied");
 }

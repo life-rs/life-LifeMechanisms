@@ -1,5 +1,5 @@
 {
-    "Id": "Meds",
+    "Id": "LifeMeds",
     "ParentId": "LifeMechs",
     "Icon": "/files/handbook/icon_medical.png",
     "Color": "",

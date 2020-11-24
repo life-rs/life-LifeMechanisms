@@ -1,0 +1,7 @@
+{
+    "Id": "AR-45Parts",
+    "ParentId": "Weapon-Mods",
+    "Icon": "/files/handbook/icon_weapons_assaultrifles.png",
+    "Color": "",
+    "Order": "3"
+}
