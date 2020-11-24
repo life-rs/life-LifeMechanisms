@@ -3,10 +3,11 @@
   "author": "life",
   "description": "collection of my mods",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "src":{
     "src/modloader.js": "CacheModLoad",
-    "src/life.js": "CacheModLoad"
+    "src/life.js": "CacheModLoad",
+    "src/categories.js": "TamperModLoad"
   },
   "folders": [
 	"files/assort/ragfair",
@@ -46,12 +47,12 @@
     "45-standard",
     "45-drum"
   ],
-  "containers": [
+  "categ": [
     "categories/handbook",
     "categories/templates",
     "categories/traders"
   ],
-  "cats": [
+  "things": [
     "LifeMechs",
     "Armor",
     "Containers",
