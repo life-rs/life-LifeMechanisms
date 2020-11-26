@@ -14,8 +14,8 @@
   "folders": [
 	"files/assort/ragfair",
 	"files/items",
-  	"files/locales/en",
-  	"files/templates"
+  "files/locales/en",
+  "files/templates"
   ],
   "filenames": [
     "57Receiver",
