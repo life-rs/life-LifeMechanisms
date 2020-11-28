@@ -210,7 +210,7 @@
 		"isChamberLoad": true,
 		"chamberAmmoCount": 1,
 		"isBoltCatch": true,
-		"defMagType": "5.7LB-Mag",
+		"defMagType": "57LB-Mag",
 		"defAmmo": "5.7Death",
 		"shotgunDispersion": 0,
 		"Chambers": [
@@ -240,7 +240,7 @@
 			}
 		],
 		"CameraRecoil": 0.2,
-		"CameraSnap": 1.5,
+		"CameraSnap": 3.5,
 		"ReloadMode": "ExternalMagazine",
 		"CenterOfImpact": 0,
 		"AimPlane": 0.16,
@@ -249,9 +249,9 @@
 		"Foldable": false,
 		"Retractable": false,
 		"TacticalReloadStiffnes": {
-			"x": 0.5,
-			"y": 0.3,
-			"z": 0.5
+			"x": 0.95,
+			"y": 0.33,
+			"z": 0.95
 		},
 		"TacticalReloadFixation": 0.95,
 		"RecoilCenter": {
