@@ -3,7 +3,7 @@
   "author": "life",
   "description": "collection of my mods",
   "license": "MIT",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "autoupdate": true,
   "checkUpdateUrl": "https://raw.githubusercontent.com/life-rs/life-LifeMechanisms/main/updater.json",
   "src":{
@@ -14,8 +14,8 @@
   "folders": [
 	"files/assort/ragfair",
 	"files/items",
-  	"files/locales/en",
-  	"files/templates"
+  "files/locales/en",
+  "files/templates"
   ],
   "filenames": [
     "57Receiver",
