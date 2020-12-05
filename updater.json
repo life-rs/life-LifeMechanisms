@@ -1,9 +1,9 @@
 {
     "name": "LifeMechanisms",
     "author": "life",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "forceDowngrade": false,
-    "downloadUpdateUrl": "https://github.com/life-rs/life-LifeMechanisms/archive/1.1.5.zip",
+    "downloadUpdateUrl": "https://github.com/life-rs/life-LifeMechanisms/archive/1.1.6.zip",
     "excludeFromUpdate": [
         "README.md"
     ]
