@@ -1,0 +1,10 @@
+{
+    "_id": "50Cal_AP",
+    "_tpl": "50Cal_AP",
+    "parentId": "hideout",
+    "slotId": "hideout",
+    "upd": {
+        "UnlimitedCount": true,
+        "StackObjectsCount": 999999999
+    }
+}

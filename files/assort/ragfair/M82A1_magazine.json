@@ -1,0 +1,10 @@
+{
+    "_id": "M82A1_magazine",
+    "_tpl": "M82A1_magazine",
+    "parentId": "hideout",
+    "slotId": "hideout",
+    "upd": {
+        "UnlimitedCount": true,
+        "StackObjectsCount": 999999999
+    }
+}
