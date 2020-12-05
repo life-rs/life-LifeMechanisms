@@ -47,7 +47,13 @@
     "45-barrel",
     "45-shortbarrel",
     "45-standard",
-    "45-drum"
+    "45-drum",
+    "50Cal_AP",
+    "BarrettM82A1",
+    "M82A1_barrel",
+    "M82A1_body",
+    "M82A1_magazine",
+    "M82A1_stock"
   ],
   "categ": [
     "test/handbook",
@@ -59,6 +65,7 @@
     "Containers",
     "LifeMeds",
     "Weapon-Mods",
+    "M82A1Parts",
     "AMRParts",
     "5-7LBParts",
     "AR-45Parts",
