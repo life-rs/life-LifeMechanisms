@@ -1,6 +1,6 @@
 {
-	"_id": "57-105inchBar",
-	"_tpl": "57-105inchBar",
+	"_id": "standardbarrel",
+	"_tpl": "standardbarrel",
 	"parentId": "hideout",
 	"slotId": "hideout",
 	"upd": {
